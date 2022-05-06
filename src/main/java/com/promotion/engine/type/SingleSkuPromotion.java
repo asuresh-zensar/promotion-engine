@@ -2,13 +2,13 @@ package com.promotion.engine.type;
 
 public class SingleSkuPromotion extends PromotionType {
 
-	private String skuId;
+	private String sku;
 	private int quantity;
-	public String getSkuId() {
-		return skuId;
+	public String getSku() {
+		return sku;
 	}
-	public void setSkuId(String skuId) {
-		this.skuId = skuId;
+	public void setSku(String sku) {
+		this.sku = sku;
 	}
 	public int getQuantity() {
 		return quantity;
@@ -16,9 +16,9 @@ public class SingleSkuPromotion extends PromotionType {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	public SingleSkuPromotion(double fixedPrice, String skuId, int quantity) {
+	public SingleSkuPromotion(double fixedPrice, String sku, int quantity) {
 		super(fixedPrice);
-		this.skuId = skuId;
+		this.sku = sku;
 		this.quantity = quantity;
 	}
 	
